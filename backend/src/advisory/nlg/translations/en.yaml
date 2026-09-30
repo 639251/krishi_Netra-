@@ -1,0 +1,35 @@
+heavy_rain_flowering:
+  title: "Heavy Rain Alert — {crop} {stage} Stage"
+  message: "Moderate to heavy rain ({rainfall}mm) expected tomorrow during critical {stage} stage. Risk of flower drop and waterlogging. Postpone chemical spraying, clear drainage channels immediately, and apply 0.2% Borax foliar spray once rains subside."
+  action_items:
+    - "Inspect and clear field drainage channels"
+    - "Postpone scheduled pesticide/fertilizer applications"
+    - "Drain excess water to prevent root rot and flower drop"
+
+heat_wave:
+  title: "Severe Heat Stress Advisory ({temp_max}°C)"
+  message: "Extreme high temperature ({temp_max}°C) with low relative humidity ({humidity}%) forecast. High evapotranspiration risk. Irrigate crops during early morning or late evening hours and apply straw mulch to preserve soil moisture."
+  action_items:
+    - "Provide light and frequent irrigation"
+    - "Apply organic mulch around root zones"
+    - "Avoid field work between 11:00 AM and 3:30 PM"
+
+optimal_spray:
+  title: "Optimal Weather Window for Spraying & Nutrient Application"
+  message: "Favourable micro-climate conditions with low wind speed ({wind_speed} km/h) and minimal rain probability. Ideal window for protective foliar spraying and micronutrient top-dressing."
+  action_items:
+    - "Conduct scheduled pesticide/fungicide spraying"
+    - "Complete foliar micronutrient applications"
+
+pest_disease_risk:
+  title: "Fungal Disease & Pest Alert (High Humidity: {humidity}%)"
+  message: "Warm temperatures combined with high atmospheric humidity ({humidity}%) create conducive micro-climate for fungal leaf blight and pest propagation. Scout fields regularly."
+  action_items:
+    - "Monitor undersides of leaves for early disease symptoms"
+    - "Apply prophylactic bio-fungicide if spots appear"
+
+normal_conditions:
+  title: "Favourable Weather Advisory"
+  message: "Weather parameters are within normal physiological range for {crop}. Continue standard agronomic practices."
+  action_items:
+    - "Continue regular field operations and weeding"

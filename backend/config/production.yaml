@@ -1,0 +1,16 @@
+# Production Configuration Overrides
+server:
+  host: "0.0.0.0"
+  port: 8000
+  reload: false
+
+database:
+  url: "postgresql+asyncpg://postgres:postgres@localhost:5432/krishinetra"
+  echo: false
+
+redis:
+  host: "redis-cluster.internal"
+  port: 6379
+
+delivery:
+  simulation_mode: false

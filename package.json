@@ -1,0 +1,10 @@
+{
+  "name": "krishinetra",
+  "private": true,
+  "version": "2.3.1",
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "preview": "npm run preview --prefix frontend"
+  }
+}

@@ -1,0 +1,48 @@
+# Default Configuration for KrishiNetra Backend
+server:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true
+  api_prefix: "/v1"
+  docs_url: "/docs"
+  redoc_url: "/redoc"
+  title: "KrishiNetra Agro-Meteorological Downscaling API"
+  version: "2.3.1"
+
+database:
+  url: "sqlite:///./krishinetra.db"
+  echo: false
+  pool_size: 10
+  max_overflow: 20
+
+redis:
+  host: "localhost"
+  port: 6379
+  db: 0
+  cache_ttl_seconds: 3600
+
+auth:
+  jwt_secret_key: "krishinetra-secret-key-for-jwt-tokens-development-only"
+  jwt_algorithm: "HS256"
+  access_token_expire_minutes: 60
+  rate_limit_per_minute: 1000
+
+geospatial:
+  default_crs: "EPSG:4326"
+  grid_resolution_km: 1.0
+  idw_power: 2.0
+  max_search_radius_km: 50.0
+
+ml:
+  model_dir: "./saved_models"
+  temp_lapse_rate_c_per_km: -6.5
+  confidence_interval_percent: 90
+  random_forest_trees: 200
+  xgboost_estimators: 200
+  ensemble_method: "ridge_stacking"
+
+delivery:
+  msg91_auth_key: ""
+  whatsapp_token: ""
+  fcm_server_key: ""
+  simulation_mode: true
